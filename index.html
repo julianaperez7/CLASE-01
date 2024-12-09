@@ -3,80 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculadora basica</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="lightblue">
-   <header>
-    <h1>SOBRE JULIANA</h1>
-    </header> 
-    
-<main>
-   <section> 
-    <!--Introduccion-->
-        <h2>INTRODUCCION</h2>
-        <div class="container">
-        <p>Hola soy Juliana me gusta conocer nuevos lugares, tener nuevas experiencias,compartir tiempo con mis familiares y amigos.
-        </p>
-        <img src="juliana.jpg"alt="clase01">
-        </div>
-    </section>
-<section>
-<h2>MIS REDES SOCIALES</h2>
-<p>Conectacte en las siguientes plataformas:</p>
-<ul>
-    <li><a href="https://es-la.facebook.com/">Facebook</a></li>
-    <li><a href="https://www.instagram.com/">Instagram</a></li>
-    <li><a href="https://www.youtube.com/">Youtube</a></li>
-    <li><a href="https://www.tiktok.com/es/">Tik Tok</a></li>
-    <li><a href="https://x.com/">X</a></li>
-</ul>
-</section>
-<section>
-    <h3>MIS PASATIEMPOS</h3>
-    <OL>
-        <li>Ir a la playa.</li>
-        <li>Dormir.</li>
-        <li>Conocer nuevos lugares.</li>
-        </OL>
-        </section>
-        <section>
-        <h2>TAREAS PENDIENTES</h2>
-        <ol>
-            <li>Comprar la ropa de diciembre.</li>
-        <LI>Terminar clases de habilidades digitales.</LI>
-        <li>Realizar las actividades pendientes de habilidades digitales.</li>
-        </ol>
-        </section>
-        <!--mI HORRIO SEMANAL-->
-        <SECTION>
-            <H2>MI HORARIO SEMANAL</H2>
-            <TABLE>
-                <THEAD>
-                    <TR>
-                        <TH> DIA</TH>
-                        <TH>ACTIVIDAD</TH>
-                        </TR>
-                        </THEAD>
-                    </TBODY>
-                    <TR>
-                        <TD>LUNES</TD>
-                        <TD>Estudiar para el examen final de matematicas.</TD>
-                        </TR>
-                        <tr>
-                            <TD>MIERCOLES</td>
-                                <TD>Completar el proyecto de ciencias.</TD>
-                                </tr>
-                                <tr>
-                                <td>Viernes</td>
-                                <td>Organizar mis apuntes de clases.</td>
-                                </tr>
-                            
-                        </TABLE>
-                        </SECTION>
-</main>
-<footer>
-    <p>&copy; 2024- Todos los derechos reservados.</p>
-    </footer>
+<body>
+   <h1>CALCULADORA</h1> 
+   <label for="num1">número 1:</label>
+   <input type="number" id="num1" placeholder="escribe un número"><br>
+   <label for="num2">número 2:</label>
+   <input type="number" id="num2" placeholder="escribe un número"><br>
+   
+   <div class="button-container">
+    <button class="suma" onclick="realizarOperacion('suma')">suma</button>
+    <button class="resta" onclick="realizarOperacion('resta')">resta</button>
+    <button class="multiplicacion" onclick="realizarOperacion('multiplicacion')">multiplicacion</button>
+    <button class="division" onclick="realizarOperacion(division)">division</button>
+   </div>
+   <div id="result"></div>
 </body>
+<script src="script.js"></script>
 </html>

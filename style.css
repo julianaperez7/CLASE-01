@@ -1,73 +1,52 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg,#448fd6,#e23fcc);
-    color: #333;
-    line-height: 1.6;
-}
-header{
-    background-color: #3d5588;
-    color: white;
-    padding: 20px;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
-    box-shadow: 0px,4px, 6px,rgba(0, 0, 0, 0.1);
+    background-color: rgb(220, 244, 245);
+    margin-top: 50px;
 }
-footer{
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    margin: 0 auto;
-    max-width: 820px;
+h1 {
+color: rgb(199, 16, 101);
 }
-main{
-padding: 20px;
-max-width: 800px;
-margin: 0 auto;
-background: white;
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+input{
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid rgb(222, 220, 245)
+    border-radius: 5px;
 }
-.container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.button-container{
+margin-top: 20px;
 }
-img{
-    margin-left: 50%;
-    width: 50;
-    height: auto;
-    border-radius: 30%;
-    margin: 10px 0;
+button{
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
 }
-a{
-    color: #448fd6;
-    text-decoration: none;
+button:hover{
+    opacity: 0.7;
 }
-a:hover{
-    text-decoration:underline ;
-    color: rgb(19, 21, 21);
+.suma{
+    background-color:rgb(16, 147, 199);
+    color: beige;
 }
-table{
-    width: 100%;
-    border-collapse: collapse;
+.resta{
+    background-color: rgb(16, 147, 199);
+    color: beige;
+}
+.multiplicacion{
+    background-color: rgb(16, 147, 199);
+    color: beige;
+}
+.division{
+    background-color: rgb(16, 147, 199);
+    color: beige;
+}
+#result{
     margin-top: 20px;
-}
-table,th,td{
-    border: 1px solid #530b83;
-}
-th,td{
-    padding: 10px;
-    text-align: center;
-}
-th{
-    background-color: #6b98db;
-}
-ul, ol{
-    margin: 10px 0;
-    padding-left: 20px;
+    font-weight:  bold;
+    font-size: 20px;
+    color: cadetblue;
 }
